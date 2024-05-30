@@ -224,12 +224,71 @@ nav ul li a {
     border-radius: 15px;
 }
 
+/* play-instant-container */
+.play-instant-container{
+    max-width: 1320px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: -200px;
+}
+.play-instant-content{
+    margin: 0px 150px;
+}
+.main-image{
+    width: 100%;
+}
+.sub-image{
+    position: relative;
+    width: 50%;
+    bottom: 250px;
+    right: 100px;
+}
+
+/* Careers */
+.careers-container{
+    background-image: url("../images/Group\ 14.png");
+    background-color: var(--linear-first-color);
+}
+.careers{
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.careers-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.careers-p{
+    margin: 30px 0px;
+}
+.careers-list p{
+    font-weight: 700;
+}
+.careers-content button{
+    background-color: white;
+    color:#F948B2
+}
+.careers-content , .careers-image{
+    width: 100%;
+}
+.careers-image img{
+    width: 100%;
+}
+
 /* ************** responsive design***** */
 @media screen and (max-width:576px) {
 
     nav,
     nav ul,
-    .we-are-gamer {
+    .we-are-gamer,
+    .play-instant-container ,
+    .careers{
         flex-direction: column;
         align-items: center;
         margin-top: 15px;
@@ -246,7 +305,8 @@ nav ul li a {
 
     .banner-image img,
     .gamer-image,
-    .gamer-content {
+    .gamer-content, .play-instant-content,
+    .careers {
         width: 100%;
         padding: 15px;
     }
@@ -256,12 +316,18 @@ nav ul li a {
         background-size: cover;
     }
 
-    .gamer-content {
+    .gamer-content, .play-instant-content{
         text-align: center;
     }
 
     .banner {
         padding: 15px 25px;
+    }
+    .play-instant-images{
+        margin: 0px 80px;
+    }
+    .careers-container{
+        margin-top: 70px;
     }
 }
 
@@ -272,17 +338,21 @@ nav ul li a {
         margin: 0px 25px;
     }
 
-    .we-are-gamer {
+    .we-are-gamer, .play-instant-container ,.careers {
         flex-direction: column;
         align-items: center;
         margin-top: 15px;
     }
 
     .gamer-image,
-    .gamer-content {
+    .gamer-content,
+    .careers-image img {
         width: 100%;
         padding: 15px;
         text-align: center;
+    }
+    .play-instant-images, .careers {
+        margin: 0px 80px;
     }
 
 }
@@ -290,7 +360,7 @@ nav ul li a {
 @media screen and (min-width:769px) and (max-width:1320px) {
 
     nav,
-    .banner {
+    .banner,.play-instant-container ,.careers{
         margin: 0px 25px;
     }
 
