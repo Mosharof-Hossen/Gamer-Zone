@@ -315,7 +315,40 @@ nav ul li a {
     font-weight: 700;
     margin-left: 5px;
 }
+/* Footer */
+footer{
+    background-color: #0b0223;
+    color: white;
+    padding: 50px 0px;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+.footer-title span{
+    color: var(--primary-color);
+    margin-left: 15px;
+}
+.footer-icons img{
+    width: 40px;
+    margin: 30px 5px;
 
+}
+.footer-details{
+    margin: 0px auto;
+    text-align: center;
+}
+.footer-details div{
+    margin: 15px 0px;
+}
+.footer-details span{
+    margin-left: 20px;
+}
+.owner{
+    color: var(--primary-color);
+}
 /* ************** responsive design***** */
 @media screen and (max-width:576px) {
 
