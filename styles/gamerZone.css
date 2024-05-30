@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Work Sans", sans-serif;
 }
 
@@ -14,9 +14,22 @@ body{
     --secondary-color: #534C64;
     --linear-first-color: #F948B2;
     --linear-second-color: #8758F1;
-    --bg-color:#E6E6E9;
+    --bg-color: #E6E6E9;
 }
 
+.title-color {
+    background: linear-gradient(to bottom, var(--linear-first-color), var(--linear-second-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
 
 /* ************ Nav */
 nav {
@@ -27,36 +40,43 @@ nav {
     text-align: center;
     padding: 20px 0px;
 }
-.nav-title{
+
+.nav-title {
     display: flex;
     align-items: center;
 }
-.nav-title h1{
+
+.nav-title h1 {
     font-weight: 700;
     font-size: 35px;
     color: var(--title-color);
     margin-left: 10px;
 }
-.nav-title h1 span{
+
+.nav-title h1 span {
     color: var(--primary-color);
 }
-.nav-social-icon img{
+
+.nav-social-icon img {
     width: 30px;
     margin-left: 5px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     align-items: center;
-    
+
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     margin-right: 25px;
     color: var(--secondary-color);
     font-weight: 700;
 }
-.nav-social-icon{
+
+.nav-social-icon {
     display: flex;
     align-items: center;
     padding: 2px 5px;
@@ -64,27 +84,107 @@ nav ul li a{
     border-radius: 8px;
 }
 
+/* *************Banner**************** */
+.banner-container {
+    background-image: url("../images/Group\ 14.png");
+}
+
+.banner {
+    max-width: 1320px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.banner-image {
+    text-align: right;
+}
+
+.banner-image img {
+    width: 80%;
+}
+
+.banner-content h2 {
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 15px 0px;
+}
+
+.banner-content p {
+    color: var(--secondary-color);
+    margin-top: 5px;
+}
+
+.banner-content .btn-one {
+    background-color: var(--primary-color);
+}
+
+.banner-content .btn-two {
+    background-color: #4ec5f7;
+}
+
+.banner-content p img {
+    width: 16px;
+}
 
 /* ************** responsive design***** */
 @media screen and (max-width:576px) {
-    nav, nav ul{
+
+    nav,
+    nav ul {
         flex-direction: column;
         align-items: center;
         margin-top: 15px;
     }
-    nav ul li,.nav-social-icon{
+
+    nav ul li,
+    .nav-social-icon {
         margin-top: 15px;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-image img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .banner-container {
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    .banner {
+        padding: 15px 25px;
     }
 }
 
 @media screen and (min-width:577px) and (max-width:768px) {
-    nav{
+
+    nav,
+    .banner {
         margin: 0px 25px;
     }
 }
 
 @media screen and (min-width:769px) and (max-width:1320px) {
-    nav{
+
+    nav,
+    .banner {
         margin: 0px 25px;
+    }
+
+    .banner {
+        padding: 15px 25px;
     }
 }
