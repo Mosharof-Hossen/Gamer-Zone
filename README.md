@@ -1,6 +1,6 @@
 # Project Name : [Gamer-Zone](https://mosharof-hossen.github.io/Gamer-Zone/)
 
-## Feature: 
+## Tools: 
 
 1.HTML
 
